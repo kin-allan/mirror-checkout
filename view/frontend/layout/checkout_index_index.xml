@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+
+    <body>
+        <referenceBlock name="checkout.root">
+            <arguments>
+                <argument name="jsLayout" xsi:type="array">
+                    <item name="components" xsi:type="array">
+                        <item name="checkout" xsi:type="array">
+                            <item name="children" xsi:type="array">
+                                <item name="steps" xsi:type="array">
+                                    <item name="children" xsi:type="array">
+                                        <item name="shipping-step" xsi:type="array">
+                                            <item name="children" xsi:type="array">
+                                                <item name="shippingAddress" xsi:type="array">
+                                                    <item name="component" xsi:type="string">Nimbus_MirrorCheckout/js/view/shipping</item>
+                                                    <item name="children" xsi:type="array">
+                                                        <item name="shipping-address-fieldset" xsi:type="array">
+                                                            <item name="children" xsi:type="array">
+                                                                <item name="firstname" xsi:type="array">
+                                                                    <item name="config" xsi:type="array">
+                                                                        <item name="label" xsi:type="string">Emantsrif</item>
+                                                                    </item>
+                                                                </item>
+                                                                <item name="lastname" xsi:type="array">
+                                                                    <item name="config" xsi:type="array">
+                                                                        <item name="label" xsi:type="string">Emantsal</item>
+                                                                    </item>
+                                                                </item>
+                                                                <item name="city" xsi:type="array">
+                                                                    <item name="config" xsi:type="array">
+                                                                        <item name="label" xsi:type="string">Ytic</item>
+                                                                    </item>
+                                                                </item>
+                                                                <item name="region_id" xsi:type="array">
+                                                                    <item name="config" xsi:type="array">
+                                                                        <item name="label" xsi:type="string">Ecnivorp/Etats</item>
+                                                                    </item>
+                                                                </item>
+                                                                <item name="region" xsi:type="array">
+                                                                    <item name="config" xsi:type="array">
+                                                                        <item name="label" xsi:type="string">Ecnivorp/Etats</item>
+                                                                    </item>
+                                                                </item>
+                                                                <item name="postcode" xsi:type="array">
+                                                                    <item name="config" xsi:type="array">
+                                                                        <item name="label" xsi:type="string">Edoc Latsop/Piz</item>
+                                                                    </item>
+                                                                </item>
+                                                                <item name="country_id" xsi:type="array">
+                                                                    <item name="config" xsi:type="array">
+                                                                        <item name="label" xsi:type="string">Yrtnuoc</item>
+                                                                    </item>
+                                                                </item>
+                                                                <item name="company" xsi:type="array">
+                                                                    <item name="config" xsi:type="array">
+                                                                        <item name="componentDisabled" xsi:type="boolean">true</item>
+                                                                    </item>
+                                                                </item>
+                                                                <item name="telephone" xsi:type="array">
+                                                                    <item name="config" xsi:type="array">
+                                                                        <item name="componentDisabled" xsi:type="boolean">true</item>
+                                                                    </item>
+                                                                </item>
+                                                            </item>
+                                                        </item>
+                                                    </item>
+                                                </item>
+                                            </item>
+                                        </item>
+                                    </item>
+                                </item>
+                            </item>
+                        </item>
+                    </item>
+                </argument>
+            </arguments>
+        </referenceBlock>
+    </body>
+
+</page>
