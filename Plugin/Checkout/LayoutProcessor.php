@@ -2,17 +2,20 @@
 
 namespace Nimbus\MirrorCheckout\Plugin\Checkout;
 
-
 class LayoutProcessor {
 
-    public function aroundProcess(\Magento\Checkout\Block\Checkout\LayoutProcessor $subject, callable $process, $jsLayout)
+    /**
+     * Reverse the street label
+     * @param  \Magento\Checkout\Block\Checkout\LayoutProcessor $subject
+     * @param  array           $result
+     * @return array
+     */
+    public function afterProcess(\Magento\Checkout\Block\Checkout\LayoutProcessor $subject, $result)
     {
-        $jsLayout = $process($jsLayout);
-
-        $jsLayout['components']['checkout']['children']
+        $result['components']['checkout']['children']
             ['steps']['children']['shipping-step']['children']['shippingAddress']
             ['children']['shipping-address-fieldset']['children']['street']['label'] = 'Teerts';
 
-        return $jsLayout;
+        return $result;
     }
 }
